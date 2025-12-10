@@ -214,7 +214,7 @@ End-to-end connectivity using the test steps from Task 4.
 
 
 
-
+(Download the project: click on the Vasile.pkt file in this repository and then click “Download raw file” to save it to your device).
 
 
 
