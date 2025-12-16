@@ -212,29 +212,38 @@ Firewall rule on the Rotterdam server
 
 End-to-end connectivity using the test steps from Task 4.
 
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>London–Rotterdam WAN Simulation</title>
+</head>
+<body>
 
-## Network Screenshots & Testing
+<h1>London–Rotterdam WAN Simulation (Cisco Packet Tracer)</h1>
 
-### Network Topology Overview
-![Topology](images/topology-overview.png)
+<h2>Network Topology</h2>
+<img src="images/topology-overview.png" width="900">
 
-### Firewall Configuration
-![Firewall](images/firewall-ftp-block.png)
+<h2>Firewall Configuration</h2>
+<img src="images/firewall-ftp-block.png" width="900">
 
-### TRACERT Tests
-![PC1 to PC41](images/tracert-pc1-pc41.png)
-![PC80 to PC40](images/tracert-pc80-pc40.png)
-![Server to Server](images/tracert-rotterdam-london.png)
+<h2>TRACERT Tests</h2>
+<img src="images/tracert-pc1-pc41.png" width="900">
+<img src="images/tracert-pc80-pc40.png" width="900">
+<img src="images/tracert-rotterdam-london.png" width="900">
 
-### HTTP Test
-![HTTP PC1](images/http-pc1.png)
+<h2>HTTP Test</h2>
+<img src="images/http-pc1.png" width="900">
 
-### FTP Tests
-![FTP PC40](images/ftp-pc40.png)
-![FTP PC80](images/ftp-pc80.png)
+<h2>FTP Tests</h2>
+<img src="images/ftp-pc40.png" width="900">
+<img src="images/ftp-pc80.png" width="900">
 
-### Email Tests
-![Email PC41](images/email-pc41.png)
-![Email PC40](images/email-pc40.png)
+<h2>Email Tests</h2>
+<img src="images/email-pc41.png" width="900">
+<img src="images/email-pc40.png" width="900">
+
+</body>
+</html>
 
