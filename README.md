@@ -1,5 +1,15 @@
 # London–Rotterdam WAN Simulation (Cisco Packet Tracer)
 
+## Download the Packet Tracer File
+
+- 👉 **[Click here to download the Packet Tracer file](London-Rotterdam-WAN.pkt)**
+
+After downloading:
+1. Open **Cisco Packet Tracer**
+2. Go to **File → Open**
+3. Select the downloaded `.pkt` file
+
+
 This project presents a complete Cisco Packet Tracer simulation of a Wide Area Network (WAN)
 connecting two sites: **London** and **Rotterdam**.
 
