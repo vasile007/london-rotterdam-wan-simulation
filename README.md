@@ -218,7 +218,8 @@ End-to-end connectivity using the test steps from Task 4.
 ## Network Screenshots & Testing
 
 ### Network Topology Overview
-![Topology](images/topology-overview.png)
+![Topology](topology-overview.png)
+
 
 ### Firewall Configuration
 ![Firewall](images/firewall-ftp-block.png)
