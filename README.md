@@ -240,6 +240,8 @@ All devices were tested using ICMP, TRACERT, HTTP, FTP, and Email services.
 
 ---
 
+### TRACERT Tests
+
 #### TRACERT – PC1 to PC41
 ![TRACERT PC1 to PC41](images/tracert-pc1-pc41.png)
 
@@ -251,13 +253,14 @@ All devices were tested using ICMP, TRACERT, HTTP, FTP, and Email services.
 
 ---
 
+### HTTP Testing
+
 #### HTTP – Browser from PC1
 ![HTTP PC1](images/http-pc1.png)
 
-#### HTTP – Browser from PC80
-![HTTP PC80](images/http-pc80.png)
-
 ---
+
+### FTP Testing
 
 #### FTP – PC40 to Rotterdam FTP Server
 ![FTP PC40](images/ftp-pc40.png)
@@ -267,11 +270,14 @@ All devices were tested using ICMP, TRACERT, HTTP, FTP, and Email services.
 
 ---
 
+### Email Testing
+
 #### Email – PC1 to PC41 (Receiving Side)
 ![Email PC41](images/email-pc41.png)
 
 #### Email – PC80 to PC40 (Receiving Side)
 ![Email PC40](images/email-pc40.png)
+
 
 
 
