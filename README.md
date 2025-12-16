@@ -277,15 +277,3 @@ All devices were tested using ICMP, TRACERT, HTTP, FTP, and Email services.
 
 #### Email – PC80 to PC40 (Receiving Side)
 ![Email PC40](images/email-pc40.png)
-
-
-
-
-
-(Download the project: click on the Vasile.pkt file in this repository and then click “Download raw file” to save it to your device).
-
-
-
-
-
-
