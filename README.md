@@ -212,60 +212,55 @@ Firewall rule on the Rotterdam server
 
 End-to-end connectivity using the test steps from Task 4.
 
----
+<hr>
 
-## 📸 Network Screenshots & Testing
+<h2>📸 Network Screenshots & Testing</h2>
 
-### Network Topology Overview
-![Topology Overview](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/topology-overview.png)
+<h3>Network Topology Overview</h3>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/topology-overview.png" width="800">
 
----
+<hr>
 
-### Firewall Configuration
+<h3>Firewall Configuration</h3>
+<p>Outbound FTP blocking rule (TCP port 21) on Rotterdam Server.</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/firewall-ftp-block.png" width="800">
 
-#### Outbound FTP Blocking Rule
-A Windows Firewall rule was configured to block outbound FTP traffic (TCP port 21)
-from the Rotterdam Server.
+<hr>
 
-![Firewall FTP Block](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/firewall-ftp-block.png)
+<h3>TRACERT Tests</h3>
 
----
+<p>PC1 to PC41</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-pc1-pc41.png" width="800">
 
-### TRACERT Tests
+<p>PC80 to PC40</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-pc80-pc40.png" width="800">
 
-#### TRACERT – PC1 to PC41
-![TRACERT PC1 to PC41](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-pc1-pc41.png)
+<p>Rotterdam Server to London Server</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-rotterdam-london.png" width="800">
 
-#### TRACERT – PC80 to PC40
-![TRACERT PC80 to PC40](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-pc80-pc40.png)
+<hr>
 
-#### TRACERT – Rotterdam Server to London Server
-![TRACERT Server to Server](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-rotterdam-london.png)
+<h3>HTTP Testing</h3>
+<p>Browser access from PC1</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/http-pc1.png" width="800">
 
----
+<hr>
 
-### HTTP Testing
+<h3>FTP Testing</h3>
 
-#### HTTP – Browser from PC1
-![HTTP PC1](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/http-pc1.png)
+<p>PC40 to Rotterdam FTP Server</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/ftp-pc40.png" width="800">
 
----
+<p>PC80 to Rotterdam FTP Server</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/ftp-pc80.png" width="800">
 
-### FTP Testing
+<hr>
 
-#### FTP – PC40 to Rotterdam FTP Server
-![FTP PC40](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/ftp-pc40.png)
+<h3>Email Testing</h3>
 
-#### FTP – PC80 to Rotterdam FTP Server
-![FTP PC80](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/ftp-pc80.png)
+<p>PC1 to PC41 (receiving side)</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/email-pc41.png" width="800">
 
----
-
-### Email Testing
-
-#### Email – PC1 to PC41 (Receiving Side)
-![Email PC41](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/email-pc41.png)
-
-#### Email – PC80 to PC40 (Receiving Side)
-![Email PC40](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/email-pc40.png)
+<p>PC80 to PC40 (receiving side)</p>
+<img src="https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/email-pc40.png" width="800">
 
