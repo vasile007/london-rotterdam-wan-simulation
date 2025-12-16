@@ -217,10 +217,7 @@ End-to-end connectivity using the test steps from Task 4.
 ## 📸 Network Screenshots & Testing
 
 ### Network Topology Overview
-![Topology Overview](images/topology-overview.png)
-
-This screenshot shows the complete WAN topology connecting London and Rotterdam,
-including routers, switches, and servers.
+![Topology Overview](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/topology-overview.png)
 
 ---
 
@@ -230,50 +227,45 @@ including routers, switches, and servers.
 A Windows Firewall rule was configured to block outbound FTP traffic (TCP port 21)
 from the Rotterdam Server.
 
-![Firewall FTP Block](images/firewall-ftp-block.png)
-
----
-
-### Connectivity & Services Testing
-
-All devices were tested using ICMP, TRACERT, HTTP, FTP, and Email services.
+![Firewall FTP Block](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/firewall-ftp-block.png)
 
 ---
 
 ### TRACERT Tests
 
 #### TRACERT – PC1 to PC41
-![TRACERT PC1 to PC41](images/tracert-pc1-pc41.png)
+![TRACERT PC1 to PC41](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-pc1-pc41.png)
 
 #### TRACERT – PC80 to PC40
-![TRACERT PC80 to PC40](images/tracert-pc80-pc40.png)
+![TRACERT PC80 to PC40](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-pc80-pc40.png)
 
 #### TRACERT – Rotterdam Server to London Server
-![TRACERT Server to Server](images/tracert-rotterdam-london.png)
+![TRACERT Server to Server](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/tracert-rotterdam-london.png)
 
 ---
 
 ### HTTP Testing
 
 #### HTTP – Browser from PC1
-![HTTP PC1](images/http-pc1.png)
+![HTTP PC1](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/http-pc1.png)
 
 ---
 
 ### FTP Testing
 
 #### FTP – PC40 to Rotterdam FTP Server
-![FTP PC40](images/ftp-pc40.png)
+![FTP PC40](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/ftp-pc40.png)
 
 #### FTP – PC80 to Rotterdam FTP Server
-![FTP PC80](images/ftp-pc80.png)
+![FTP PC80](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/ftp-pc80.png)
 
 ---
 
 ### Email Testing
 
 #### Email – PC1 to PC41 (Receiving Side)
-![Email PC41](images/email-pc41.png)
+![Email PC41](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/email-pc41.png)
 
 #### Email – PC80 to PC40 (Receiving Side)
-![Email PC40](images/email-pc40.png)
+![Email PC40](https://raw.githubusercontent.com/vasile007/london-rotterdam-wan-simulation/main/images/email-pc40.png)
+
