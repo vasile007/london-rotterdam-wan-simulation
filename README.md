@@ -218,7 +218,7 @@ End-to-end connectivity using the test steps from Task 4.
 ## Network Screenshots & Testing
 
 ### Network Topology Overview
-![Topology](https://github.com/vasile007/london-rotterdam-wan-simulation/blob/8b8bad10fa54e4f73db48569029007b18a5c9997/topology-overview.png)
+![image alt](https://github.com/vasile007/london-rotterdam-wan-simulation/blob/8b8bad10fa54e4f73db48569029007b18a5c9997/topology-overview.png)
 
 
 ### Firewall Configuration
