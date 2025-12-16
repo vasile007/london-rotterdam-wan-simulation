@@ -12,7 +12,7 @@ The purpose of this project is to demonstrate practical networking skills includ
 
 ---
 
-## Network Overview
+## Task 1 – Network Design, IP Addressing & Subnetting
 
 The network is based on the address space **192.168.20.0/24** and is subnetted using
 **Fixed Length Subnet Masking (FLSM)** to support **40 hosts per LAN**.
@@ -20,7 +20,7 @@ The network is based on the address space **192.168.20.0/24** and is subnetted u
 A subnet mask of **/26 (255.255.255.192)** is used, providing:
 - 64 IP addresses per subnet
 - 62 usable host addresses
-- Sufficient capacity for current requirements
+- Sufficient capacity for the required number of hosts
 
 The network consists of:
 - One LAN at the London site
@@ -29,73 +29,50 @@ The network consists of:
 
 ---
 
-## IP Addressing & Subnetting
-
-### Subnet Allocation
-
-- **London LAN:** `192.168.20.0/26`
-- **Rotterdam LAN:** `192.168.20.64/26`
-- **WAN Link:** `192.168.20.128/26`
-
-All end devices and network interfaces are manually assigned IP addresses according
-to the subnet they belong to, with routers acting as default gateways for each LAN.
-
----
-
-## Dynamic Routing (RIPv2)
+## Task 2 – Dynamic Routing (RIPv2)
 
 Dynamic routing is implemented using **RIPv2** on both routers.
-RIPv2 allows automatic exchange of routing information between the London and Rotterdam sites,
+RIPv2 enables automatic exchange of routing information between all three subnets,
 ensuring full connectivity without the need for static routes.
 
-RIPv2 is chosen because:
+RIPv2 was selected because:
 - It supports classless routing
 - It is simple to configure
-- It is suitable for small to medium-sized networks
+- It is appropriate for small to medium-sized networks
 
 ---
 
-## Network Services
+## Task 3 – Network Services & Security
 
-### FTP Service
-An FTP server is configured on the **Rotterdam Server**.
-This service allows authenticated file access from client PCs using the following credentials:
-- Username: `cisco`
-- Password: `cisco`
+### Network Services
+- **FTP Server** configured on the Rotterdam Server (credentials: cisco / cisco)
+- **HTTP and DNS Services** hosted on the London Server
+- DNS domain configured as **adventureworks.com**
+- **Email Server** configured on the Rotterdam Server using the same domain
 
-### HTTP & DNS Services
-The **London Server** hosts both HTTP and DNS services.
-DNS is configured with the domain name **adventureworks.com**, allowing clients to access
-the web server using a hostname instead of an IP address.
+Email clients are configured on selected PCs and verified through successful
+send and receive operations.
 
-### Email Service
-An email server is configured on the **Rotterdam Server** using the domain
-**adventureworks.com**.
+### Security Configuration
+A **Windows Firewall rule** is implemented on the Rotterdam Server to:
+- Block **outbound FTP traffic**
+- Protocol: TCP
+- Port: 21
 
-Email clients are configured on selected PCs, each with a unique email address.
-Successful send and receive operations confirm correct email server configuration.
-
----
-
-## Security Configuration
-
-A **Windows Firewall rule** is implemented on the Rotterdam Server to enhance security.
-The rule blocks **outbound FTP traffic (TCP port 21)** initiated by the server itself.
-
-This demonstrates basic server-side security control while still allowing
-other services such as HTTP, DNS, and Email to function normally.
+This provides basic server-side security while allowing other services
+(HTTP, DNS, Email) to operate normally.
 
 ---
 
-## Testing & Verification
+## Task 4 – Testing & Verification
 
-The network is fully tested to ensure correct configuration and functionality.
+The network is fully tested to confirm correct configuration and functionality.
 
 Testing includes:
 - ICMP ping tests to verify basic connectivity
 - TRACERT tests to verify correct routing paths
 - HTTP testing using a web browser
-- FTP login and file access testing
+- FTP authentication and file access testing
 - Email send and receive testing
 
 All tests confirm:
@@ -106,62 +83,42 @@ All tests confirm:
 
 ---
 
-## Project Files
+## Evidence – Screenshots
 
-- **Vasile.pkt** – Cisco Packet Tracer simulation file
+### Network Topology
+![Network Topology](topology-overview.png)
+
+### Windows Firewall – FTP Block (Rotterdam Server)
+![Firewall Rule](firewall-ftp-block.png)
+
+### TRACERT Tests
+![PC1 to PC41](tracert-pc1-pc41.png)
+![PC80 to PC40](tracert-pc80-pc40.png)
+![Rotterdam Server to London Server](tracert-rotterdam-london.png)
+
+### HTTP Test
+![HTTP from PC1](http-pc1.png)
+
+### FTP Tests
+![FTP from PC40](ftp-pc40.png)
+![FTP from PC80](ftp-pc80.png)
+
+### Email Tests (Receiving Side)
+![Email PC41](email-pc41.png)
+![Email PC40](email-pc40.png)
+
+---
+
+## Project Files
+- **Vasile.pkt** – Cisco Packet Tracer project file
 - **README.md** – Project documentation
-- **Screenshot files (.png)** – Visual evidence of configuration and testing
+- **PNG files** – Visual evidence of configuration and testing
 
 ---
 
 ## How to Open the Project
-
 1. Download the `.pkt` file from this repository
 2. Open **Cisco Packet Tracer**
 3. Load the project file
 4. Verify IP addressing, routing, services, and security configuration
 5. Repeat the test procedures described above
-
-
-
-
-
-
-# London–Rotterdam WAN Simulation (Cisco Packet Tracer)
-
-This repository contains a Cisco Packet Tracer project demonstrating a secure WAN
-connection between London and Rotterdam using subnetting, RIPv2, and multiple services.
-
----
-
-## Network Topology
-![Topology](topology-overview.png)
-
----
-
-## Firewall – FTP Block (Rotterdam Server)
-![Firewall](firewall-ftp-block.png)
-
----
-
-## TRACERT Tests
-![PC1 to PC41](tracert-pc1-pc41.png)
-![PC80 to PC40](tracert-pc80-pc40.png)
-![Server to Server](tracert-rotterdam-london.png)
-
----
-
-## HTTP Test
-![HTTP PC1](http-pc1.png)
-
----
-
-## FTP Tests
-![FTP PC40](ftp-pc40.png)
-![FTP PC80](ftp-pc80.png)
-
----
-
-## Email Tests
-![Email PC41](email-pc41.png)
-![Email PC40](email-pc40.png)
