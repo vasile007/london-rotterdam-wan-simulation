@@ -237,4 +237,4 @@ End-to-end connectivity using the test steps from Task 4.
 
 ### Email Tests
 ![Email PC41](images/email-pc41.png)
-![image_alt](https://github.com/vasile007/london-rotterdam-wan-simulation/blob/main/images/email-pc40.png?raw=true)  
+![image alt](https://github.com/vasile007/london-rotterdam-wan-simulation/blob/main/images/email-pc40.png?raw=true)  
